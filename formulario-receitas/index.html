@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário receita </title>
+    <h1>Bem vindo(a)! Nos conte mais sobre a sua receita!</h1>
+</head>
+<body>
+    
+    <form action="enviado.html" method="post">
+       
+        <label for="nome"> Nome da receita:</label>
+        <input type="text" name="nomeReceita" id="NomeReceita"
+        required="required" autofocus><br>
+        
+        <label> Categoria:</label>
+        <select name="objetivo"required>
+            <option value="">Selecione...</option>>
+            <option value="doce">Doce</option>
+            <option value="salgada">Salgada</option>
+        </select>
+
+        <label> Ingredientes:</label>
+        <textarea name="Ingredientes" rows="8" cols="25" maxlength="100" required placeholder="Ingredientes"></textarea>
+
+        <label> Modo de preparo::</label>
+        <textarea name="Preparo" rows="8" cols="25" maxlength="100" required placeholder="Modo de preparo"></textarea>
+        
+        <label for="dt-nasc"> Tempo de preparo:</label>
+        <input type="time" name="dt-nasc" id="dt-nasc" required><br>
+        
+
+        <label> Dificuldade:</label>
+        <input class="emlinha" type="radio" name="Dificuldade" id="semanal">
+        <label class="emlinha" for="semanal"> Fácil</label>
+        <input class="emlinha" type="radio" name="Dificuldade" id="mensal">
+        <label class="emlinha" for="mensal"> Médio</label>
+        <input class="emlinha" type="radio" name="Dificuldade" id="anual">
+        <label class="emlinha" for="anual"> Dificil</label><br>
+        
+        <label for="foto"> Foto da receita:</label>
+        <input type="file" name="foto" id="foto" required><br>
+        
+        <label for="nome"> Seu nome:</label>
+        <input type="text" name="nome" id="Nome"
+        required="required" autofocus><br>
+
+        <label for="nome"> Email para contato:</label>
+        <input type="text" name="nome" id="Nome"
+        required="required" autofocus><br>
+
+        <label> Comentários adicionais</label>
+        <textarea name="Comentários" rows="8" cols="25" maxlength="100" required placeholder="Comentários adicionais"></textarea>
+        
+    <br>
+
+        
+    <br>
+
+    <input type="submit" name="enviar" value="Enviar" id="enviar">
+    <p>
+        <input type="submit" value="Enviar (Simulação)" id="enviar">
+    </p>
+
+    </form>
+    
+</body>
+</html>
